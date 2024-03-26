@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.875" name="dbReviewFood">
+  <DataContextMoniker Name="/dbReviewFoodDataContext" />
+  <nestedChildShapes>
+    <classShape Id="c15b6087-9ac5-4157-b52c-3c72db46b0d8" absoluteBounds="3.5, 3.375, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/dbReviewFoodDataContext/BinhLuan" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d8526f3d-6f5a-47af-8c2a-421e0f0629de" absoluteBounds="3.515, 3.835, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d5f62b56-473f-4daf-bae6-ef1fc9da70e8" absoluteBounds="3.5, 6.25, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/dbReviewFoodDataContext/Post" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9135a8b5-f2b2-445e-b74a-e5a554224e58" absoluteBounds="3.515, 6.71, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f516f757-5dff-4ecc-bb51-311132c48855" absoluteBounds="3.5, 1.25, 2, 1.3862939453125">
+      <DataClassMoniker Name="/dbReviewFoodDataContext/Favorite" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ec4adf00-8cee-45d7-9bc6-dd33fa08e964" absoluteBounds="3.515, 1.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="97933c43-51cd-4708-bf55-01c547b81864" absoluteBounds="0.75, 3.5, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/dbReviewFoodDataContext/NguoiDung" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bb99cc37-d4f6-413c-ada2-2bc2e1f6d4f3" absoluteBounds="0.765, 3.96, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 4.51524983723958); (3.5 : 4.51524983723958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbReviewFoodDataContext/NguoiDung/NguoiDung_BinhLuan" />
+      <nodes>
+        <classShapeMoniker Id="97933c43-51cd-4708-bf55-01c547b81864" />
+        <classShapeMoniker Id="c15b6087-9ac5-4157-b52c-3c72db46b0d8" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 6.23240397135417); (1.75 : 7.42390055338542); (3.5 : 7.42390055338542)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbReviewFoodDataContext/NguoiDung/NguoiDung_Post" />
+      <nodes>
+        <classShapeMoniker Id="97933c43-51cd-4708-bf55-01c547b81864" />
+        <classShapeMoniker Id="d5f62b56-473f-4daf-bae6-ef1fc9da70e8" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 3.5); (1.75 : 1.94314697265625); (3.5 : 1.94314697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbReviewFoodDataContext/NguoiDung/NguoiDung_Favorite" />
+      <nodes>
+        <classShapeMoniker Id="97933c43-51cd-4708-bf55-01c547b81864" />
+        <classShapeMoniker Id="f516f757-5dff-4ecc-bb51-311132c48855" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
